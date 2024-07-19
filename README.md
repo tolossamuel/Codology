@@ -7,12 +7,8 @@ Welcome to the Qelem AI, a cutting-edge solution designed to revolutionize educa
 ## Table of Contents
 
 - [Features](#features)
-- [Installation](#installation)
-- [Running the Application](#running-the-application)
 - [Usage](#usage)
 - [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
-- [License](#license)
 - [Contact](#contact)
 
 ## Features
