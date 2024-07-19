@@ -1,8 +1,8 @@
 # Codology
 
-# Student Portal Management System
+# Qelem AI
 
-Welcome to the Student Portal Management System, a cutting-edge solution designed to revolutionize educational administration through the integration of advanced AI technologies. This project aims to streamline student management, enhance communication, and provide personalized educational support.
+Welcome to the Qelem AI, a cutting-edge solution designed to revolutionize educational administration through the integration of advanced AI technologies. This project aims to streamline student management, enhance communication, and provide personalized educational support.
 
 ## Table of Contents
 
@@ -59,6 +59,7 @@ Welcome to the Student Portal Management System, a cutting-edge solution designe
 For questions, suggestions, or contributions, please contact:
 
 - **Name**:  Codology
+- **Github** : [Codology](https://github.com/tolossamuel/Codology)
 - **Email**: codology.a2sv@gmail.com
 
 Thank you for using and contributing to the Student Portal Management System
