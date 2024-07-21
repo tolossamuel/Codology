@@ -27,10 +27,10 @@ app.add_middleware(
 # Initialize the Cohere client with the API key
 co = cohere.Client(COHERE_API_KEY)
 # Dependency to check for API key
-def api_key_dependency(x_api_key: str = Header(...)):
-    if x_api_key != API_KEY:
-        raise HTTPException(status_code=401, detail="Invalid API Key")
-    return x_api_key
+# def api_key_dependency(x_api_key: str = Header(...)):
+#     if x_api_key != API_KEY:
+#         raise HTTPException(status_code=401, detail="Invalid API Key")
+#     return x_api_key
 
 # Define a simple model
 class ChatMessage(BaseModel):
