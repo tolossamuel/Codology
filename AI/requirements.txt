@@ -1,0 +1,4 @@
+fastapi
+pydantic    
+cohere
+python-dotenv
