@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     
-    'accounts',
+       'accounts',
 ]
 
 MIDDLEWARE = [
@@ -49,6 +49,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    
+ 
 ]
 
 ROOT_URLCONF = 'QelemAI.urls'
@@ -68,7 +70,7 @@ TEMPLATES = [
         },
     },
 ]
-
+AUTH_USER_MODEL="accounts.User"
 WSGI_APPLICATION = 'QelemAI.wsgi.application'
 
 
