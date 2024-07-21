@@ -8,7 +8,7 @@ interface UploadResponse {
 
 const Upload: React.FC = () => {
   const [file, setFile] = useState<File | null>(null);
-  const [summary, setSummary] = useState<string>('');
+  const [summary, setSummary]: [any,any] = useState<string>('');
 
   const handleFileChange = (e: ChangeEvent<HTMLInputElement>) => {
     if (e.target.files && e.target.files.length > 0) {
@@ -28,7 +28,7 @@ const Upload: React.FC = () => {
           'Content-Type': 'multipart/form-data',
         },
       });
-      setSummary(response.data.summary); // Set the summary received from the server
+      setSummary(response.data['response']); // Set the summary received from the server
     } catch (error) {
       if (axios.isAxiosError(error) && error.response) {
         console.error('Error response:', error.response);
