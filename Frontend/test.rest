@@ -1,1 +1,6 @@
-GET  http://localhost:3000
+POST https://qelem-ai.onrender.com/chat
+Content-Type: application/json
+
+{
+    "text": "hi"
+}

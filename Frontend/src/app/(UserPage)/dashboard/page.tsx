@@ -1,3 +1,4 @@
+import ChatBot from "@/components/user_components/chatbot";
 import ContentCard from "@/components/user_components/ContentCards";
 import CourseCard from "@/components/user_components/CourseCard";
 import HomeWorkCard from "@/components/user_components/HomeworkCard";
@@ -16,15 +17,19 @@ function Dashboard() {
       <div className="grid grid-cols-3 gap-2 mt-5">
         <div className="col-start-1 col-end-3 mt-2">
           <div className="grid grid-cols-3 gap-3">
-            <ContentCard />
-            <ContentCard />
-            <ContentCard />
+            <ContentCard contentName="Group"  contentImg="/vercel.svg"/>
+            <ContentCard contentName="AI"  contentImg="/vercel.svg"/>
+            <ContentCard contentName="Result"  contentImg="/vercel.svg"/>
+            
           </div>
           <div>
-            <h1 className="p-2 text-2xl text-gray-700 ml-2 font-semibold"> Enrolled Courses</h1>
+            <h1 className="p-2 text-2xl text-gray-700 ml-2 font-semibold">
+              {" "}
+              Enrolled Courses
+            </h1>
             <div className="grid grid-cols-2 gap-4">
-                <CourseCard />
-                <CourseCard />
+              <CourseCard />
+              <CourseCard />
             </div>
           </div>
         </div>
@@ -36,8 +41,10 @@ function Dashboard() {
             <HomeWorkCard />
             <HomeWorkCard />
             <HomeWorkCard />
-            
           </div>
+         <div>
+          <ChatBot/>
+         </div>
         </div>
       </div>
     </div>
