@@ -14,13 +14,13 @@ if not COHERE_API_KEY:
     raise RuntimeError("COHERE_API_KEY not set in .env file")
 
 app = FastAPI()
-
+origins = ["*"]
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  
+    allow_origins=origins,
     allow_credentials=True,
-    allow_methods=["*"],  
-    allow_headers=["*"],  
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 # Initialize the Cohere client with the API key
