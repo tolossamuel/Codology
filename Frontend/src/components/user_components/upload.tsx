@@ -23,7 +23,7 @@ const Upload: React.FC = () => {
     formData.append('file', file); // Ensure this matches the server's expected field name
   
     try {
-      const response = await axios.post<UploadResponse>('https://codology.onrender.com/tutorial', formData, {
+      const response: any = await axios.post<UploadResponse>('https://codology.onrender.com/tutorial', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
