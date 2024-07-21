@@ -2,16 +2,26 @@ from fastapi import FastAPI, Depends, HTTPException, Header
 from pydantic import BaseModel
 import cohere
 from dotenv import load_dotenv
+from fastapi.middleware.cors import CORSMiddleware
 import os
 
 load_dotenv()
 
 COHERE_API_KEY = os.getenv("COHERE_API_KEY")
 
+
 if not COHERE_API_KEY:
     raise RuntimeError("COHERE_API_KEY not set in .env file")
 
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  
+    allow_credentials=True,
+    allow_methods=["*"],  
+    allow_headers=["*"],  
+)
 
 # Initialize the Cohere client with the API key
 co = cohere.Client(COHERE_API_KEY)
